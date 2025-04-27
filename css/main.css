@@ -1,0 +1,24 @@
+/* Main styles for the portfolio website */
+
+/* Hero section background pattern */
+.hero-pattern {
+    background-color: #111827;
+    background-image: radial-gradient(rgba(79, 70, 229, 0.2) 2px, transparent 2px);
+    background-size: 20px 20px;
+}
+
+/* Form elements */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+/* Social links in footer */
+.social-link {
+    color: #9ca3af;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: white;
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakradewa Hajji Perwira - Senior Frontend Developer</title>
+    <!-- External CSS libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS files -->
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-indigo-600">C<span class="text-gray-800">HP</span></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition duration-300">Skills</a>
+                <a href="#experience" class="text-gray-600 hover:text-indigo-600 transition duration-300">Experience</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300">Projects</a>
+                <a href="#education" class="text-gray-600 hover:text-indigo-600 transition duration-300">Education</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <svg class="h-6 w-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="md:hidden hidden bg-white w-full pb-3 shadow-lg" id="mobile-menu">
+            <div class="flex flex-col space-y-4 px-6">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition duration-300">Skills</a>
+                <a href="#experience" class="text-gray-600 hover:text-indigo-600 transition duration-300">Experience</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300">Projects</a>
+                <a href="#education" class="text-gray-600 hover:text-indigo-600 transition duration-300">Education</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern min-h-screen flex items-center justify-center text-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between py-20">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 animated fade-in">
+                    Cakradewa Hajji Perwira
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-medium text-indigo-300 mb-6 animated fade-in delay-100">
+                    Senior Frontend Developer
+                </h2>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 animated fade-in delay-200">
+                    Crafting exceptional digital experiences with Vue.js, TypeScript & Flutter
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 animated fade-in delay-300">
+                    <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center">
+                        Get in Touch
+                    </a>
+                    <a href="#projects" class="bg-transparent border-2 border-white hover:bg-white hover:text-indigo-800 text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center">
+                        View Projects
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center animated slide-in-right">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
+                        <span class="text-6xl text-white font-bold"><img src='images/Profile.jpeg' class="rounded-full"></span>
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-white px-6 py-2 rounded-lg shadow-lg">
+                        <span class="text-indigo-600 font-bold">8+ Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 w-full text-center animated fade-in delay-500">
+            <a href="#about" class="text-white">
+                <i class="fa fa-chevron-down fa-2x floating"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 scroll-animation">About Me</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 scroll-animation">
+                    <p class="text-lg text-gray-600 mb-6">
+                        Highly skilled Senior Frontend Developer with over 8 years of experience designing, 
+                        developing, and maintaining complex web and mobile applications. Proficient in Vue.js, 
+                        TypeScript, Flutter, and RESTful API integration.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Known for developing secure, modular, and user-friendly systems for large-scale governmental use. 
+                        Demonstrated leadership in agile teams, UI/UX collaboration, performance optimization, and mentoring.
+                    </p>
+                    <div class="bg-gray-100 p-6 rounded-lg border-l-4 border-indigo-600">
+                        <p class="text-gray-700 italic">
+                            "I believe in creating clean, maintainable code that translates into intuitive user experiences."
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12 scroll-animation delay-200">
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Frontend Development</span>
+                            <span class="text-indigo-600">90%</span>
+                        </div>
+                        <div class="progress-bar" style="--width: 90%"></div>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Vue.js & TypeScript</span>
+                            <span class="text-indigo-600">90%</span>
+                        </div>
+                        <div class="progress-bar" style="--width: 90%"></div>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Flutter Development</span>
+                            <span class="text-indigo-600">85%</span>
+                        </div>
+                        <div class="progress-bar" style="--width: 85%"></div>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">UI/UX Implementation</span>
+                            <span class="text-indigo-600">88%</span>
+                        </div>
+                        <div class="progress-bar" style="--width: 88%"></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Team Leadership</span>
+                            <span class="text-indigo-600">80%</span>
+                        </div>
+                        <div class="progress-bar" style="--width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 scroll-animation">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md card scroll-animation">
+                    <div class="rounded-full bg-indigo-100 w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-code text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Frontend</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>Vue.js, TypeScript</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>HTML5, CSS3</li>
+                        <li>TailwindCSS, SCSS</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md card scroll-animation delay-100">
+                    <div class="rounded-full bg-indigo-100 w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Mobile</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>Flutter (Dart)</li>
+                        <li>Material Design</li>
+                        <li>Custom Widgets</li>
+                        <li>Responsive UI</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md card scroll-animation delay-200">
+                    <div class="rounded-full bg-indigo-100 w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-server text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Integration</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>REST APIs</li>
+                        <li>JSON</li>
+                        <li>State Management</li>
+                        <li>Authentication Flows</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md card scroll-animation delay-300">
+                    <div class="rounded-full bg-indigo-100 w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-tools text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Tools</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>Git, GitHub</li>
+                        <li>Figma, Zeplin</li>
+                        <li>VS Code, Postman</li>
+                        <li>JIRA, Agile, Scrum</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 scroll-animation">Work Experience</h2>
+            <div class="timeline-container">
+                <!-- BSSN Senior Frontend -->
+                <div class="timeline-item">
+                    <div class="timeline-content timeline-left scroll-animation">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold text-indigo-600 mt-6">Senior Frontend Developer</h3>
+                        <h4 class="text-lg font-medium mb-2">Badan Siber dan Sandi Negara (BSSN) – Indonesia</h4>
+                        <p class="text-sm text-gray-500 mb-4">Jan 2025 – Present</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Spearhead frontend architecture for secure and mission-critical government systems.</li>
+                            <li>Define best practices for component design, state management, and testing strategies.</li>
+                            <li>Collaborate with backend, DevOps, and security teams to ensure code compliance and system integrity.</li>
+                            <li>Refactor legacy systems into modern, modular Vue.js + TypeScript architecture.</li>
+                            <li>Lead sprint planning, task breakdown, and conduct regular code reviews and team mentoring.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- BSSN Frontend Developer -->
+                <div class="timeline-item">
+                    <div class="timeline-content timeline-right scroll-animation">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold text-indigo-600 mt-6">Frontend Developer</h3>
+                        <h4 class="text-lg font-medium mb-2">Badan Siber dan Sandi Negara (BSSN) – Indonesia</h4>
+                        <p class="text-sm text-gray-500 mb-4">Jan 2022 – Dec 2024</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Developed and maintained a multi-module internal dashboard system for asset management, document processing, reporting, analytics, and user management.</li>
+                            <li>Utilized Vue.js (Composition API) and TypeScript to build reusable components, implement reactive state management (Vuex/Pinia), and integrate with secure REST APIs.</li>
+                            <li>Implemented Role-Based Access Control (RBAC) and user permissions throughout the UI.</li>
+                            <li>Designed responsive layouts using Tailwind CSS for consistency across mobile and desktop devices.</li>
+                            <li>Built custom input forms with validation, data tables, dynamic routing, modals, and chart components.</li>
+                            <li>Worked closely with UI/UX team to translate Figma prototypes into pixel-perfect components.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- BSSN Application System Analyst -->
+                <div class="timeline-item">
+                    <div class="timeline-content timeline-left scroll-animation">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold text-indigo-600 mt-6">Application System Analyst</h3>
+                        <h4 class="text-lg font-medium mb-2">Badan Siber dan Sandi Negara (BSSN) – Indonesia</h4>
+                        <p class="text-sm text-gray-500 mb-4">Feb 2019 – Jan 2022</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Conducted end-to-end system analysis for various internal applications and services.</li>
+                            <li>Translated user needs into flowcharts, technical documents, and development roadmaps.</li>
+                            <li>Created system diagrams, ERDs, and API documentation for developers and stakeholders.</li>
+                            <li>Provided system training for new users and wrote detailed manuals and standard operating procedures (SOPs).</li>
+                            <li>Evaluated programming tools and frameworks for feasibility within government environments.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Johnson & Johnson -->
+                <div class="timeline-item">
+                    <div class="timeline-content timeline-right scroll-animation">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold text-indigo-600 mt-6">Data Analyst</h3>
+                        <h4 class="text-lg font-medium mb-2">Johnson & Johnson Indonesia</h4>
+                        <p class="text-sm text-gray-500 mb-4">Jul 2016 – Feb 2019</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Managed and validated master data (e.g. Product, Outlet, Sales Plan) from 20+ regional distributors across Indonesia.</li>
+                            <li>Developed data mapping strategies and led the implementation of SFA Flash (Sales Force Automation) to enhance distributor visibility.</li>
+                            <li>Coordinated with IT vendors to streamline DMS (Distributor Management System) integration and troubleshoot issues.</li>
+                            <li>Provided hands-on training for distributor sales and admin teams, focusing on data input, reporting, and usage of the SFA tool.</li>
+                            <li>Delivered weekly insights to project managers for nationwide sales operations tracking.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- PT Mitra Integrasi Informatika -->
+                <div class="timeline-item">
+                    <div class="timeline-content timeline-left scroll-animation">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold text-indigo-600 mt-6">Application Developer</h3>
+                        <h4 class="text-lg font-medium mb-2">PT Mitra Integrasi Informatika</h4>
+                        <p class="text-sm text-gray-500 mb-4">Jan 2015 – Dec 2016</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Completed intensive technical onboarding in Java, SQL, JavaScript, and web development fundamentals.</li>
+                            <li>Learned core concepts of Object-Oriented Programming (OOP), relational database design, and business process modeling.</li>
+                            <li>Participated in development and testing of internal software modules for enterprise clients.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-indigo-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 scroll-animation">Key Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg scroll-animation">
+                    <div class="relative h-48 bg-indigo-600 flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-white text-6xl"></i>
+                        <div class="absolute top-4 left-4 bg-white text-indigo-600 text-xs uppercase font-bold px-3 py-1 rounded-full">Flutter</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">HR Online Attendance App</h3>
+                        <p class="text-gray-600 mb-4">
+                            A GPS-based attendance mobile application with facial recognition, leave management, and geolocation features.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Flutter</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Dart</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Geolocation</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Material Design</span>
+                        </div>
+                        <div class="border-t pt-4">
+                            <h4 class="font-semibold mb-2">Key Features:</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Real-time check-in/out with geolocation</li>
+                                <li>Facial recognition authentication</li>
+                                <li>Leave request system</li>
+                                <li>Attendance history</li>
+                                <li>Integration with internal HRIS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg scroll-animation delay-200">
+                    <div class="relative h-48 bg-indigo-600 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-white text-6xl"></i>
+                        <div class="absolute top-4 left-4 bg-white text-indigo-600 text-xs uppercase font-bold px-3 py-1 rounded-full">Vue.js</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Modular Internal Dashboard</h3>
+                        <p class="text-gray-600 mb-4">
+                            A comprehensive admin dashboard framework with multiple feature-rich modules for government use.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Vue.js</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">TypeScript</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Composition API</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">TailwindCSS</span>
+                        </div>
+                        <div class="border-t pt-4">
+                            <h4 class="font-semibold mb-2">Key Modules:</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>User management</li>
+                                <li>File encryption/decryption viewer</li>
+                                <li>Logs & system monitoring</li>
+                                <li>Custom reports generator</li>
+                                <li>Digital signature integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 scroll-animation">Education</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center p-8 bg-gray-50 rounded-xl mb-8 scroll-animation">
+                    <div class="md:mr-8 mb-6 md:mb-0">
+                        <div class="w-24 h-24 bg-indigo-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Bachelor's Degree in Information Technology</h3>
+                        <p class="text-gray-600 mb-1">BINUS University</p>
+                        <p class="text-gray-500 mb-4">2017 – 2019</p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row items-center p-8 bg-gray-50 rounded-xl scroll-animation delay-200">
+                    <div class="md:mr-8 mb-6 md:mb-0">
+                        <div class="w-24 h-24 bg-indigo-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Associate Degree in Management Information Systems</h3>
+                        <p class="text-gray-600 mb-1">Telkom University</p>
+                        <p class="text-gray-500 mb-4">2010 – 2014</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 scroll-animation">Get In Touch</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="scroll-animation">
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="bg-indigo-600 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-300">Location</p>
+                                <p class="font-medium">Jakarta, Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-indigo-600 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-300">Email</p>
+                                <a href="mailto:cakradewahajji@gmail.com" class="font-medium hover:text-indigo-300 transition duration-300">cakradewahajji@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-indigo-600 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-300">Phone</p>
+                                <a href="tel:+6281311403002" class="font-medium hover:text-indigo-300 transition duration-300">+62 813-1140-3002</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-indigo-600 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fab fa-linkedin-in text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-300">LinkedIn</p>
+                                <a href="#" class="font-medium hover:text-indigo-300 transition duration-300">LinkedIn Profile</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-indigo-600 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fab fa-github text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-300">GitHub</p>
+                                <a href="#" class="font-medium hover:text-indigo-300 transition duration-300">GitHub Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-animation delay-200">
+                    <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-300 mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-indigo-500 text-white">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-300 mb-2">Your Email</label>
+                            <input type="email" id="email" class="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-indigo-500 text-white">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-300 mb-2">Your Message</label>
+                            <textarea id="message" rows="5" class="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-indigo-500 text-white"></textarea>
+                        </div>
+                        <button type="button" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2025 Cakradewa Hajji Perwira. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file -->
+    <script src="js/script.js"></script>
+</body>
+</html>
