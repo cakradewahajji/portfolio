@@ -1,4 +1,4 @@
-# Welcome to my minmalistic portoflio!
+# Welcome to my minimalistic portfolio!
 
 Welcome to my personal portfolio website! This project showcases my professional experience, technical skills, and key projects as a **Senior Frontend Developer**. It is built with modern web technologies and designed to provide a smooth and responsive user experience.
 
@@ -30,30 +30,30 @@ Welcome to my personal portfolio website! This project showcases my professional
 
 2. Navigate to the project directory:
    ```
-    cd portfolio
+   cd portfolio
    ```
 3. Open the index.html file in your browser to view the website.
 
-📂 Project Structure
-```
-portfolio/
-├── css/
-│   ├── animations.css
-│   ├── components.css
-│   ├── layout.css
-│   └── main.css
-├── images/
-│   └── Profile.jpeg
-├── js/
-│   └── script.js
-├── [index.html](http://_vscodecontentref_/1)
-└── [README.md](http://_vscodecontentref_/2)
-```
+   📂 Project Structure
+   ```
+   portfolio/
+   ├── css/
+   │   ├── animations.css
+   │   ├── components.css
+   │   ├── layout.css
+   │   └── main.css
+   ├── images/
+   │   └── Profile.jpeg
+   ├── js/
+   │   └── script.js
+   ├── [index.html](http://_vscodecontentref_/1)
+   └── [README.md](http://_vscodecontentref_/2)
+   ```
 
-📧 Contact
-Feel free to reach out to me via:
-Email: cakradewahajji@gmail.com
-LinkedIn: LinkedIn Profile
-GitHub: GitHub Profile
+📧 Contact  
+Feel free to reach out to me via:  
+- **Email**: [cakradewahajji@gmail.com](mailto:cakradewahajji@gmail.com)  
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/cakradewahajji/)  
+- **GitHub**: [GitHub Profile](https://github.com/cakradewahajji)  
 
 Thank you for visiting my portfolio! If you like this project, feel free to give it a ⭐ on GitHub.
