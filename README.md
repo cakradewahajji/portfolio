@@ -1,4 +1,4 @@
-# Portfolio of Cakradewa Hajji Perwira
+# Welcome to my minmalistic portoflio!
 
 Welcome to my personal portfolio website! This project showcases my professional experience, technical skills, and key projects as a **Senior Frontend Developer**. It is built with modern web technologies and designed to provide a smooth and responsive user experience.
 
